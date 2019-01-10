@@ -1,1 +1,129 @@
+<!DOCTYPE html> <!-- Tells the browser its using HTML5 -->
+<html> 
+<head> <!-- Contains meta-data -->
+    <meta charset="utf-8" />  <!-- Unicode Character set --> 
+    <title>Group 2 - Home</title> <!-- Title of webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> 
+    /* Internal css goes here*/
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;
+    }
+    /* navigation bar */
+    header{
+        background:url('image/1.png');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    ul {
+        list-style: none;
+        float: right;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    ul li a:hover {
+        background: whitesmoke;
+        color: darkseagreen;
+    }
+    .main{
+        /* max-width: auto; */
+        margin: auto;
+    }
+    ul li.active a{
+        background: whitesmoke;
+        color: darkseagreen;
+    }
+    /* Content title */
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .title h1{
+        color: #fff;
+        font-size: xx-large;
+    }
+    /* Footer */
+    footer p{
+        text-align: center;
+        color:dimgrey;
+        margin: 20px auto;
+    }
+    header h1{
+        font-size: medium;
+    }
+    header p{
+        font-size: small;
+        width: 90%;
+    }
+    /* Button */
+    .button{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn{
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.6s ease;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    </style>
+</head>
+<body>
+    <!-- contents goes in the body -->
+    <header>
+        <div class="main"> 
+                <!-- Div is for grouping elements -->
+            <ul>
+                <!-- UL also known as unordered list for create list items. -->
+                <li class="active"><a href="#"> Home </a></li>
+                <!-- LI - List item to serves as a bullent in a list or as a number -->
+                <li><a href="#"> Muhammad </a></li>
+                <li><a href="#"> Teslim </a></li>
+                <li><a href="#"> Contact </a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>
+                <img src="image/logo.png" alt="Paritie Logo" style=" float: left;"> 
+                <!-- IMG is to to input image to a web document -->
+                BOOTCAMP TASK 4
+            </h1>
+        </div>
+        <div class="button">
+            <a href="#" class="btn"> Muhammad</a>
+            <a href="#" class="btn"> Teslim</a>
 
+        </div>
+    </header>
+
+    
+
+
+
+
+    <footer>
+        <p>Group 2: Task 4</p>
+    </footer>
+</body>
+</html>
