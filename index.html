@@ -119,22 +119,6 @@
             text-align: center;
         }
 
-        .services__item-img {
-            width: 15rem;
-            height: 15rem;
-        }
-        .services__item-name,
-        .who-we-are__name {
-            font-size: 1.5rem;
-            margin: 1rem 0;
-            text-align: center;
-        }
-
-        .services__item-text,
-        .who-we-are__bio {
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
 
         .avatar {
             border-radius: 50%;
@@ -146,55 +130,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 2rem;
-        }
-
-        .portfolio__container {
-            margin: 2rem 0;
-        }
-
-        .portfolio__items {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 2rem;
-        }
-
-        .portfolio__item img {
-            background: #eee;
-            height: 10rem;
-            width: 10rem;
-        }
-
-
-        .contact>.wrapper form {
-            width: 60%;
-            margin: 0 auto 5rem;
-        }
-
-        .form__input {
-            margin: 0.5rem 0;
-        }
-
-        input[type=text],
-        input[type=email],
-        .message {
-            border: 1px solid #eee;
-            border-radius: 5px;
-            padding: .5rem;
-            width: 100%;
-        }
-
-        input[type=submit] {
-            padding: .8rem;
-            font-size: 1.5rem;
-            border: 1px solid #0000ff;
-            border-radius: 5px;
-            color: #fff;
-            background: #0000ff;
-            width: 40%;
-        }
-
-        input[type=submit]:hover {
-            background: #0a0add;
         }
 
         footer {
@@ -235,43 +170,16 @@
                 </p>
             </div>
         </section><!-- end of the hero secition -->
-        <section class="services" id="services">
-            <div class="wrapper">
-                <h2 class="section-heading">Our Services</h2>
-                <div class="services__container">
-                    <div class="services__item">
-                        <img class="services__item-img" src="/img/web-dev.png" alt="Web development">
-                        <h3 class="services__item-name">Web Development</h3>
-                        <p class="services__item-text">
-                            We can help you build great web applications that will transform your business from local business to international one with just a few clicks of the button. Trust us, with Paritie backing us, beyond the sky is the goal of your business.
-                        </p>
-                    </div>
-                    <div class="services__item">
-                        <img class="services__item-img" src="/img/ux.png" alt="User Experience">
-                        <h3 class="services__item-name">UX Design</h3>
-                        <p class="services__item-text">
-                            We don't just build stuff. We listen, observe and take a 360 degree assessment of your business before we fire up our computers to design or build anything. We let the data decide what is great for your business.
-                        </p>
-                    </div>
-                    <div class="services__item">
-                        <img class="services__item-img" src="/img/cms.png" alt="cms">
-                        <h3 class="services__item-name">Custom CMS</h3>
-                        <p class="services__item-text">
-                            Well, doing business with us gives you the greatest freedom.There is no locked in contracts. We build a CMS that gives you the freedom to manipulate your business however you want without relying us to further tweak anything, which will cost you some Nairas or dollars.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section><!-- end of the services section -->
+
         <section class="who-we-are" id="who-we-are">
             <div class="wrapper">
                 <h2 class="section-heading">Who We Are</h2>
                 <div class="who-we-are__container">
                     <div class="who-we-are__item">
-                        <img src="/img/avatar.png" alt="avatar of Aliyu" class="avatar">
+                        <img src="/img/aliyu.jpg" alt="avatar of Aliyu" class="avatar">
                         <h3 class="who-we-are__name">Muhammad Aliyu</h3>
                         <p class="who-we-are__bio">
-                            I am a web developer focusing on the frontend and occasionally tweaking some backend stuffs. However frontend is my stuff, from React, Vue, Angular to Node.js, I can create a great frontend apps for you.
+                            I am a web developer focusing on the frontend and occasionally tweaking some backend stuffs. I am also a student of FUTMINNA Majoring in computer Science
                         </p>
                     </div>
                     <div class="who-we-are__item">
@@ -283,48 +191,7 @@
                     </div>
                 </div>
             </div>
-        </section><!-- end of the bio section -->
-        <section class="portfolio" id="portfolio">
-            <div class="wrapper">
-                <h2 class="section-heading">Portfolio</h2>
-                <div class="portfolio__container">
-                    <ul class="portfolio__items">
-                        <li class="portfolio__item">
-                            <img src="/img/portfolio1.png" alt="" srcset="">
-                        </li>
-                        <li class="portfolio__item">
-                            <img src="/img/portfolio2.png" alt="" srcset="">
-                        </li>
-                        <li class="portfolio__item">
-                            <img src="/img/portfolio3.png" alt="" srcset="">
-                        </li>
-                        <li class="portfolio__item">
-                            <img src="/img/portfolio4.png" alt="" srcset="">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section><!-- ends of portfolio section -->
-        <section class="contact" id="contact">
-            <div class="wrapper">
-                <h2 class="section-heading">Contact Us</h2>
-                <form action="#">
-                    <div class="form__input">
-                        <!-- <label for="name">Name</label> -->
-                        <input type="text" name="name" id="name" placeholder="Name">
-                    </div>
-                    <div class="form__input">
-                        <!-- <label for="email">Email</label> -->
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="form__input">
-                        <!-- <label for="message">Your Message</label> -->
-                        <textarea class="message" name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form> <!--end of contact form -->
-            </div>
-        </section> <!-- end of contact section -->
+        </section><!-- end of the bio section -->        
         <footer>
             <div class="wrapper">
                 <div class="site-footer">
