@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    padding: 0.9rem;
+}
+
+header>.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: #ddd;
+    background: url('img/code.jpg');
+    background-size: cover;
+    height: 380px;
+    padding-top: 5rem;
+}
+
+.darken-overlay {
+    position: relative;
+}
+
+.darken-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.darken-overlay h2,
+.darken-overlay p {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    width: 60%;
+}
+
+.hero__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero__text {
+    font-size: 1.2rem;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.services,
+.who-we-are,
+.portfolio {
+    padding: 5rem 0;
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.who-we-are {
+    background: #dedede;
+}
+
+.who-we-are__container {
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
+
+.who-we-are__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+footer {
+    padding-bottom: .5rem;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    header>.wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .logo {
+        text-align: center;
+    }
+
+    .hero {
+        height: 480px;
+    }
+    .darken-overlay h2,
+    .darken-overlay p {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        margin: 2rem auto;
+        line-height: 1.3;
+    }
+    .darken-overlay h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 0;
+    }
+    header>.wrapper {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav ul li:not(:last-of-type) {
+        margin: .5rem 0;
+        border-bottom: 2px solid #eee;
+    }
+    nav ul li:last-of-type {
+        margin-bottom: .5rem;
+    }
+
+    .hero {
+        height: 385px;
+    }
+
+    .darken-overlay h2,
+    .darken-overlay p {
+        width: 100%;
+    }
+
+    .who-we-are__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
