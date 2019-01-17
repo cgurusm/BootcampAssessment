@@ -20,6 +20,10 @@ header {
     padding: 0;
 }
 
+.logo {
+    text-align: center;
+}
+
 .logo img {
     height: 40px;
     width: 40px;
@@ -45,6 +49,15 @@ header {
 
 .darken-overlay h2 {
     margin-top: 0;
+}
+
+.hero__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero__text {
+    font-size: 1.2rem;
 }
 
 header>.wrapper {
@@ -81,12 +94,51 @@ nav ul li:last-of-type {
     width: 100%;
 }
 
+.services,
+.who-we-are,
+.portfolio {
+    padding: 5rem 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.who-we-are {
+    background: #dedede;
+}
+
 .who-we-are__container {
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
+
+.who-we-are__container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
+footer {
+    padding-bottom: .5rem;
+}
+
+.site-footer {
+    text-align: center;
+    margin: 1rem 0 .5rem;
+}
+
 @media screen and (min-width: 800px) {
+    header {
+        padding: 2rem;
+    }
     nav ul {
         display: flex;
         list-style: none;
@@ -94,9 +146,12 @@ nav ul li:last-of-type {
         margin: 10px 0 0;
         padding: 0;
     }
-    .wrapper {
-        width: 80%;
-        margin: 0 auto;
+    nav ul li:not(:last-of-type) {
+        margin: .5rem 0;
+        border-bottom: none;
+    }
+    nav ul li:last-of-type {
+        margin: .5rem 0;
     }
     .hero {
         background: #ddd;
@@ -125,49 +180,15 @@ nav ul li:last-of-type {
         z-index: 1;
         width: 60%;
     }
-    .hero__heading {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    .hero__text {
-        font-size: 1.2rem;
-    }
-    .section-heading {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-    .services,
-    .who-we-are,
-    .portfolio {
-        padding: 5rem 0;
-    }
     .services__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         text-align: center;
     }
-    .who-we-are {
-        background: #dedede;
-    }
     .who-we-are__container {
-        text-align: center;
-    }
-    .avatar {
-        border-radius: 50%;
-        height: 10rem;
-        width: 10rem;
-    }
-    .who-we-are__container {
-        display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
         grid-gap: 2rem;
-    }
-    footer {
-        padding-bottom: .5rem;
-    }
-    .site-footer {
-        text-align: center;
     }
 }
